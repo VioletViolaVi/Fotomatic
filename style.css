@@ -1,3 +1,5 @@
+/* universal */
+
 *, *::before, *::after {
     margin: 0;
     padding: 0;
@@ -23,4 +25,47 @@ body {
 a {
     color: darkslategrey;
     text-decoration: none;
+}
+
+/* nav */
+
+.desktop {
+    display: none;
+}
+
+.mobile li {
+    display: inline;
+    font-size: 1.5rem;
+    padding: 0.9rem;
+}
+
+.mobile {
+    background-color: white;
+    padding: 1rem 0;
+}
+
+#jonBtn {
+    background-color: lightgreen;
+    border-radius: 0.5rem;
+    padding: 0.1rem 0.6rem;
+    color: white;
+}
+
+/* main */
+
+.main-content {
+    background: url("https://images.unsplash.com/photo-1519458246479-6acae7536988?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1500&q=80");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 20rem;
+    width: 100%;
+}
+
+.cursive {
+    font-family: "Damion", cursive;
+}
+
+.striking {
+    font-family: "Rubik", sans-serif;
 }
