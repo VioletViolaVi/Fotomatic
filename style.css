@@ -1,0 +1,26 @@
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header, nav, main, footer, section {
+    display: block;
+}
+
+html {
+    font-size: 16px;
+    scroll-padding-top: 100px;
+}
+
+body {
+    background-color: lightgrey;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+}
+
+a {
+    color: darkslategrey;
+    text-decoration: none;
+}
