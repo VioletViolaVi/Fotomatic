@@ -338,9 +338,15 @@ footer .copyright {
 
 /* Media Queries */
 
-@media only screen and (max-width: 760px) {
-    .main-content {
-        top: 2.5625rem;
+@media only screen and (max-width: 450px) {
+    #sign-up-section {
+        height: 20rem;
+    }
+    #sign-up-cta h1 {
+        font-size: 2.25rem;
+    }
+    #sign-up-cta h2 {
+        font-size: 2rem;
     }
 }
 
@@ -370,9 +376,9 @@ footer .copyright {
         line-height: 1.6;
         color: white;
     }
-}
-
-@media only screen and (max-width: 760px) {
+    .main-content {
+        top: 2.5625rem;
+    }
     #sign-up-section {
         align-items: center;
         justify-content: center;
@@ -397,33 +403,6 @@ footer .copyright {
     #sign-up-cta h2 {
         font-size: 2.25rem;
     }
-}
-
-@media only screen and (max-width: 450px) {
-    #sign-up-section {
-        height: 20rem;
-    }
-    #sign-up-cta h1 {
-        font-size: 2.25rem;
-    }
-    #sign-up-cta h2 {
-        font-size: 2rem;
-    }
-}
-
-@media only screen and (max-width: 890px) {
-    .feature h2 {
-        font-size: 1.125rem;
-        line-height: 1.3;
-        font-weight: normal;
-    }
-    .feature h3 {
-        font-size: .875rem;
-        line-height: 1.4;
-    }
-}
-
-@media only screen and (max-width: 760px) {
     #features-section {
         flex-flow: column;
         padding: 0;
@@ -432,9 +411,6 @@ footer .copyright {
         margin: 0;
         padding: 1.25rem 1rem 0 1rem;
     }
-}
-
-@media only screen and (max-width: 760px) {
     #filters-section {
         padding: 1.5rem 0 0 0;
     }
@@ -457,9 +433,6 @@ footer .copyright {
     #filters-section .extra {
         display: none;
     }
-}
-
-@media only screen and (max-width: 760px) {
     #quotes-section content {
         padding: 1.875rem .625rem;
     }
@@ -472,10 +445,19 @@ footer .copyright {
         padding-top: 1rem;
         margin: auto;
     }
-}
-
-@media only screen and (min-width: 760px) {
     footer .content {
         font-size: .625rem;
+    }
+}
+
+@media only screen and (max-width: 890px) {
+    .feature h2 {
+        font-size: 1.125rem;
+        line-height: 1.3;
+        font-weight: normal;
+    }
+    .feature h3 {
+        font-size: .875rem;
+        line-height: 1.4;
     }
 }
