@@ -136,8 +136,17 @@ header .mobile {
     display: none;
 }
 
-.content {
-    padding: 1rem;
+/* bg img */
+
+.content .center {
+    padding: 0rem
+}
+
+.main-content .header {
+    padding: 9rem 0rem 0rem 0rem;
+    color: white;
+    text-align: center;
+    font-size: 2rem;
 }
 
 /* Sign Up Section */
@@ -146,11 +155,11 @@ header .mobile {
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
-    height: 43.5rem;
+    max-height: 6rem;
 }
 
 #sign-up-cta {
-    padding: 0 5rem 2.5rem 5rem;
+    padding: 0rem;
     border: solid 1px #979797;
     border-radius: 4px;
     background-color: #9dc20b;
@@ -177,11 +186,12 @@ header .mobile {
     font-weight: bold;
 }
 
-#sign-up-cta .cursive {
+.cursive {
     font-family: "Damion", cursive;
+    padding-bottom: .25rem;
 }
 
-#sign-up-cta .striking {
+.striking {
     font-family: "Rubik", sans-serif;
     padding-bottom: .75rem;
 }
@@ -234,6 +244,10 @@ header .mobile {
     line-height: 1.2;
     font-weight: 300;
     color: #4a4a4a;
+}
+
+.features-section .content {
+    padding: 1rem;
 }
 
 /* Filters Section */
