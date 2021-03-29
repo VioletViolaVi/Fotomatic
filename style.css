@@ -87,11 +87,11 @@ html {
     text-align: center;
 }
 
-.button {
+/* .button {
     border-radius: 4px;
     background-color: #4a4a4a;
     color: white;
-}
+} */
 
 /* Header */
 
@@ -159,10 +159,7 @@ header .mobile {
 }
 
 #sign-up-cta {
-    padding: 0rem;
-    border: solid 1px #979797;
-    border-radius: 4px;
-    background-color: #9dc20b;
+    display: none;
 }
 
 #sign-up-cta .content {
@@ -250,6 +247,10 @@ header .mobile {
     padding: 1rem;
 }
 
+.feature .center .content h3 {
+    margin-bottom: 1rem;
+}
+
 /* Filters Section */
 
 #filters-section {
@@ -283,12 +284,13 @@ header .mobile {
 }
 
 .image-container {
-    width: 6rem;
-    /* overflow: hidden; */
+    width: 100%;
+    overflow: hidden;
 }
 
 .image-container img {
-    width: 6.9rem;
+    width: 100%;
+    height: 100%;
 }
 
 /* Quotes Section */
@@ -338,6 +340,12 @@ footer .copyright {
 
 /* Media Queries */
 
+@media only screen and (min-width: 408px) {
+    .image-container img {
+        height: 7.8rem;
+    }
+}
+
 @media only screen and (max-width: 450px) {
     #sign-up-section {
         height: 20rem;
@@ -348,9 +356,24 @@ footer .copyright {
     #sign-up-cta h2 {
         font-size: 2rem;
     }
+    /* .image-container {
+        width: 9rem;
+    } */
+}
+
+@media only screen and (min-width: 451px) {
+    .feature .image-container img {
+        width: 18rem;
+        height: 15rem;
+    }
+    /* Footer */
+    .copyright, .location {
+        font-size: 1.2rem;
+    }
 }
 
 @media only screen and (max-width: 760px) {
+    /* Header */
     header .desktop {
         display: none;
     }
@@ -375,10 +398,13 @@ footer .copyright {
         background-color: #9dc20b;
         line-height: 1.6;
         color: white;
+        border-radius: 4px;
     }
+    /* bg img */
     .main-content {
         top: 2.5625rem;
     }
+    /* Sign Up Section */
     #sign-up-section {
         align-items: center;
         justify-content: center;
@@ -403,6 +429,7 @@ footer .copyright {
     #sign-up-cta h2 {
         font-size: 2.25rem;
     }
+    /* Features Section */
     #features-section {
         flex-flow: column;
         padding: 0;
@@ -411,6 +438,7 @@ footer .copyright {
         margin: 0;
         padding: 1.25rem 1rem 0 1rem;
     }
+    /* Filters Section */
     #filters-section {
         padding: 1.5rem 0 0 0;
     }
@@ -433,6 +461,7 @@ footer .copyright {
     #filters-section .extra {
         display: none;
     }
+    /* Quotes Section */
     #quotes-section content {
         padding: 1.875rem .625rem;
     }
@@ -445,12 +474,100 @@ footer .copyright {
         padding-top: 1rem;
         margin: auto;
     }
+    /* Footer */
     footer .content {
         font-size: .625rem;
     }
 }
 
+@media only screen and (min-width: 761px) {
+    /* Features Section */
+    .feature:first-child {
+        margin-top: 0rem;
+    }
+    #features-section .feature {
+        background-color: white;
+    }
+    #features-section {
+        padding: 2rem 5%;
+        margin-top: 6rem;
+    }
+}
+
+@media only screen and (min-width: 891px) {
+    /* Header */
+    header .desktop .button, #joinUs {
+        display: none;
+    }
+    .content .desktop.logo .desktop ul li {
+        padding-left: 0rem;
+    }
+    /* bg img */
+    .main-content {
+        height: 36rem;
+    }
+    /* Sign Up Section */
+    #sign-up-cta {
+        display: block;
+        padding: 0rem;
+        border: solid 1px #979797;
+        border-radius: 4px;
+        background-color: #9dc20b;
+    }
+    .small-screens.header .cursive, .small-screens.header .striking {
+        display: none;
+    }
+    #sign-up-cta {
+        margin-left: 3rem;
+        padding: 0.3rem 2rem 2rem;
+    }
+    .content.center .email .button {
+        border-radius: 4px;
+        background-color: #4a4a4a;
+        color: white;
+    }
+    /* Features Section */
+    #features-section {
+        margin-top: 21rem;
+        padding-top: 0.5rem;
+        background-color: lightgray;
+        margin-top: 20rem;
+    }
+    #features-section .feature {
+        background-color: white;
+    }
+    .feature:first-child {
+        margin-top: 0rem;
+    }
+    /* Filters Section */
+    #filters-section {
+        height: 16rem;
+    }
+    .image-container img {
+        height: 9.8rem;
+    }
+    #filters-section .content {
+        margin-bottom: 2rem;
+    }
+    /* Footer */
+    #filters-section .content h3 {
+        font-size: 2rem;
+    }
+    .copyright, .location {
+        font-size: 1.6rem;
+    }
+}
+
 @media only screen and (max-width: 890px) {
+    /* Header */
+    header .desktop .button {
+        padding: .1875rem .5rem;
+        background-color: #9dc20b;
+        line-height: 1.6;
+        color: white;
+        border-radius: 4px;
+    }
+    /* Features Section */
     .feature h2 {
         font-size: 1.125rem;
         line-height: 1.3;
@@ -459,5 +576,12 @@ footer .copyright {
     .feature h3 {
         font-size: .875rem;
         line-height: 1.4;
+    }
+}
+
+@media only screen and (min-width: 1355px) {
+    /* Filters Section */
+    .image-container img {
+        height: 12.8rem;
     }
 }
